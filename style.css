@@ -1,0 +1,75 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 2px;
+}
+:root {
+  --mainColor: rgb(206, 206, 206);
+  --mainCPadding: 20px;
+}
+body {
+  background-color: #eee;
+}
+.page {
+  height: 651px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  background-color: var(--mainColor);
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-right: var(--mainCPadding);
+  height: 55px;
+}
+.links {
+  background-color: var(--mainColor);
+  align-self: center;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  flex: 9;
+  align-items: center;
+}
+.links li {
+  display: inline-flex;
+  padding-right: var(--mainCPadding);
+}
+.main-area {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.content {
+  background-color: var(--mainColor);
+  padding: var(--mainColor);
+  margin-right: var(--mainCPadding);
+  width: 500px;
+  display: flex;
+  flex: 4;
+}
+.sidebar {
+  background-color: var(--mainColor);
+  padding: var(--mainCPadding);
+  width: 500px;
+  display: flex;
+  flex: 1;
+}
+.footer {
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  padding: var(--mainCPadding);
+  align-items: center;
+}
